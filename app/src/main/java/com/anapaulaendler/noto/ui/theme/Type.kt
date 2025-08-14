@@ -1,4 +1,4 @@
-package com.example.noto.ui.theme
+package com.anapaulaendler.noto.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

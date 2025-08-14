@@ -1,4 +1,4 @@
-package com.example.noto
+package com.anapaulaendler.noto
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -11,7 +11,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.noto.ui.theme.NotoTheme
+import com.anapaulaendler.noto.ui.theme.NotoTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

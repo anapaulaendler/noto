@@ -7,11 +7,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.noto"
+    namespace = "com.anapaulaendler.noto"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.noto"
+        applicationId = "com.anapaulaendler.noto"
         minSdk = 24
         targetSdk = 35
         versionCode = 1

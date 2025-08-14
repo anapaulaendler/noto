@@ -1,4 +1,4 @@
-package com.example.noto
+package com.anapaulaendler.noto
 
 import org.junit.Test
 
