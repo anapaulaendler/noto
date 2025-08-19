@@ -1,5 +1,6 @@
-package com.anapaulaendler.noto.domain.models
+package com.anapaulaendler.noto.domain.model
 
+import com.anapaulaendler.noto.domain.model.RecurrenceType
 import java.time.LocalDate
 
 data class Frequency(

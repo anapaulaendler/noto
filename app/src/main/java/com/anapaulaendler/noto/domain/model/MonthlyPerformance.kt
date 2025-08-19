@@ -1,4 +1,4 @@
-package com.anapaulaendler.noto.domain.models
+package com.anapaulaendler.noto.domain.model
 
 data class MonthlyPerformance(
     val id: Long,
