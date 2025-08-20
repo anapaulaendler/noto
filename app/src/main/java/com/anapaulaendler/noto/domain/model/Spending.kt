@@ -12,5 +12,6 @@ data class Spending(
     val estimatedDurationDays: Int?,
     val deliveryLeadTimeDays: Int,
     val url: String,
-    val frequencyId: Long?
+    val frequencyId: Long?,
+    val userId: Long
 )

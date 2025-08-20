@@ -9,5 +9,6 @@ data class Task(
     override val categoryId: Long,
     override val frequencyId: Long?,
     val description: String,
-    val completed: Boolean
+    val completed: Boolean,
+    override val userId: Long
 ) : Schedulable

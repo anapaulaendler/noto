@@ -5,5 +5,6 @@ data class MonthlyPerformance(
     val month: Int,
     val year: Int,
     val taskSuccessRate: Double,
-    val spendingRate: Double
+    val spendingRate: Double,
+    val userId: Long
 )

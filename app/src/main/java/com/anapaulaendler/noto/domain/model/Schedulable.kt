@@ -8,4 +8,5 @@ interface Schedulable {
     val dateTime: LocalDateTime
     val categoryId: Long
     val frequencyId: Long?
+    val userId: Long
 }
