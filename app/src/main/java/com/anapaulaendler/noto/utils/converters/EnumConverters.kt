@@ -1,8 +1,8 @@
 package com.anapaulaendler.noto.utils.converters
 
 import androidx.room.TypeConverter
-import com.anapaulaendler.noto.domain.models.RecurrenceType
-import com.anapaulaendler.noto.domain.models.Weekday
+import com.anapaulaendler.noto.domain.model.RecurrenceType
+import com.anapaulaendler.noto.domain.model.Weekday
 
 object EnumConverters {
     @TypeConverter

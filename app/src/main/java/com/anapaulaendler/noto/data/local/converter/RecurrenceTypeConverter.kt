@@ -1,7 +1,7 @@
 package com.anapaulaendler.noto.data.local.converter
 
 import androidx.room.TypeConverter
-import com.anapaulaendler.noto.domain.models.RecurrenceType
+import com.anapaulaendler.noto.domain.model.RecurrenceType
 
 object RecurrenceTypeConverter {
 

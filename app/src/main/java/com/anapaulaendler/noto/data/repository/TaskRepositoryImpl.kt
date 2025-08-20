@@ -4,7 +4,7 @@ import com.anapaulaendler.noto.data.local.dao.TaskDao
 import com.anapaulaendler.noto.data.local.entity.TaskEntity
 import com.anapaulaendler.noto.data.mapper.toDomain
 import com.anapaulaendler.noto.data.mapper.toEntity
-import com.anapaulaendler.noto.domain.models.Task
+import com.anapaulaendler.noto.domain.model.Task
 import com.anapaulaendler.noto.domain.repository.TaskRepository
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
