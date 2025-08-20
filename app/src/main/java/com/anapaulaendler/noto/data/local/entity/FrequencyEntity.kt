@@ -2,8 +2,8 @@ package com.anapaulaendler.noto.data.local.entity
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import com.anapaulaendler.noto.domain.models.RecurrenceType
-import com.anapaulaendler.noto.domain.models.Weekday
+import com.anapaulaendler.noto.domain.model.RecurrenceType
+import com.anapaulaendler.noto.domain.model.Weekday
 import java.time.LocalDate
 
 @Entity(tableName = "frequencies")
