@@ -5,19 +5,19 @@ import com.anapaulaendler.noto.data.local.entity.CategoryEntity
 import kotlinx.coroutines.flow.Flow
 
 @Dao
-interface CategoryDao {
+interface CategoryDao: BaseDao<CategoryEntity> {
+    @Query("SELECT * FROM tasks")
+    override fun getAll(): Flow<List<CategoryEntity>>
+
+    @Query("SELECT * FROM tasks WHERE id = :id")
+    override fun getById(id: Long): Flow<CategoryEntity?>
+
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insert(category: CategoryEntity): Long
+    override suspend fun insert(entity: CategoryEntity)
 
     @Update
-    suspend fun update(category: CategoryEntity)
+    override suspend fun update(entity: CategoryEntity)
 
     @Delete
-    suspend fun delete(category: CategoryEntity)
-
-    @Query("SELECT * FROM categories ORDER BY name")
-    fun getAll(): Flow<List<CategoryEntity>>
-
-    @Query("SELECT * FROM categories WHERE id = :id LIMIT 1")
-    suspend fun getById(id: Long): CategoryEntity?
+    override suspend fun delete(entity: CategoryEntity)
 }

@@ -5,19 +5,19 @@ import com.anapaulaendler.noto.data.local.entity.UserEntity
 import kotlinx.coroutines.flow.Flow
 
 @Dao
-interface UserDao {
-    @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insert(user: UserEntity): Long
-
-    @Update
-    suspend fun update(user: UserEntity)
-
-    @Delete
-    suspend fun delete(user: UserEntity)
+interface UserDao: BaseDao<UserEntity> {
+    @Query("SELECT * FROM users")
+    override fun getAll(): Flow<List<UserEntity>>
 
     @Query("SELECT * FROM users WHERE id = :id LIMIT 1")
-    suspend fun getById(id: Long): UserEntity?
+    override fun getById(id: Long): Flow<UserEntity?>
 
-    @Query("SELECT * FROM users")
-    fun getAll(): Flow<List<UserEntity>>
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    override suspend fun insert(user: UserEntity)
+
+    @Update
+    override suspend fun update(user: UserEntity)
+
+    @Delete
+    override suspend fun delete(user: UserEntity)
 }
