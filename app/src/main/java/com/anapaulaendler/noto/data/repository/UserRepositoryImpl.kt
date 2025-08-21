@@ -5,7 +5,7 @@ import com.anapaulaendler.noto.data.local.entity.UserEntity
 import com.anapaulaendler.noto.data.mapper.toDomain
 import com.anapaulaendler.noto.data.mapper.toEntity
 import com.anapaulaendler.noto.domain.model.User
-import com.anapaulaendler.noto.domain.repository.UserRepository
+import com.anapaulaendler.noto.domain.interfaces.repository.UserRepository
 import javax.inject.Inject
 
 class UserRepositoryImpl @Inject constructor(

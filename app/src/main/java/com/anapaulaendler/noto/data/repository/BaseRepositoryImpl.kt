@@ -3,7 +3,7 @@ package com.anapaulaendler.noto.data.repository
 import com.anapaulaendler.noto.data.local.dao.BaseDao
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
-import com.anapaulaendler.noto.domain.repository.BaseRepository
+import com.anapaulaendler.noto.domain.interfaces.repository.BaseRepository
 
 abstract class BaseRepositoryImpl<E, D>(
     private val dao: BaseDao<E>,

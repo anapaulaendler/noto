@@ -5,7 +5,7 @@ import com.anapaulaendler.noto.data.local.entity.TaskEntity
 import com.anapaulaendler.noto.data.mapper.toDomain
 import com.anapaulaendler.noto.data.mapper.toEntity
 import com.anapaulaendler.noto.domain.model.Task
-import com.anapaulaendler.noto.domain.repository.TaskRepository
+import com.anapaulaendler.noto.domain.interfaces.repository.TaskRepository
 import javax.inject.Inject
 
 class TaskRepositoryImpl @Inject constructor(

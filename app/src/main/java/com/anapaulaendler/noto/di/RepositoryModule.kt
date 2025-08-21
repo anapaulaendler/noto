@@ -1,6 +1,11 @@
 package com.anapaulaendler.noto.di
 
 import com.anapaulaendler.noto.data.repository.*
+import com.anapaulaendler.noto.domain.interfaces.repository.CategoryRepository
+import com.anapaulaendler.noto.domain.interfaces.repository.EventRepository
+import com.anapaulaendler.noto.domain.interfaces.repository.FrequencyRepository
+import com.anapaulaendler.noto.domain.interfaces.repository.SpendingRepository
+import com.anapaulaendler.noto.domain.interfaces.repository.TaskRepository
 import com.anapaulaendler.noto.domain.repository.*
 import dagger.Binds
 import dagger.Module

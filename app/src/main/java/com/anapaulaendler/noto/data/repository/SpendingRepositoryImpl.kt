@@ -5,7 +5,7 @@ import com.anapaulaendler.noto.data.local.entity.SpendingEntity
 import com.anapaulaendler.noto.data.mapper.toDomain
 import com.anapaulaendler.noto.data.mapper.toEntity
 import com.anapaulaendler.noto.domain.model.Spending
-import com.anapaulaendler.noto.domain.repository.SpendingRepository
+import com.anapaulaendler.noto.domain.interfaces.repository.SpendingRepository
 import javax.inject.Inject
 
 class SpendingRepositoryImpl @Inject constructor(

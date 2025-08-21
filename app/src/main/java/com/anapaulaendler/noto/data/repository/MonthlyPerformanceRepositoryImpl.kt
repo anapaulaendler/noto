@@ -5,7 +5,7 @@ import com.anapaulaendler.noto.data.local.entity.MonthlyPerformanceEntity
 import com.anapaulaendler.noto.data.mapper.toDomain
 import com.anapaulaendler.noto.data.mapper.toEntity
 import com.anapaulaendler.noto.domain.model.MonthlyPerformance
-import com.anapaulaendler.noto.domain.repository.MonthlyPerformanceRepository
+import com.anapaulaendler.noto.domain.interfaces.repository.MonthlyPerformanceRepository
 import javax.inject.Inject
 
 class MonthlyPerformanceRepositoryImpl @Inject constructor(

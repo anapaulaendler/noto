@@ -5,7 +5,7 @@ import com.anapaulaendler.noto.data.local.entity.EventEntity
 import com.anapaulaendler.noto.data.mapper.toDomain
 import com.anapaulaendler.noto.data.mapper.toEntity
 import com.anapaulaendler.noto.domain.model.Event
-import com.anapaulaendler.noto.domain.repository.EventRepository
+import com.anapaulaendler.noto.domain.interfaces.repository.EventRepository
 import javax.inject.Inject
 
 class EventRepositoryImpl @Inject constructor(

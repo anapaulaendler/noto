@@ -5,7 +5,7 @@ import com.anapaulaendler.noto.data.local.entity.CategoryEntity
 import com.anapaulaendler.noto.data.mapper.toDomain
 import com.anapaulaendler.noto.data.mapper.toEntity
 import com.anapaulaendler.noto.domain.model.Category
-import com.anapaulaendler.noto.domain.repository.CategoryRepository
+import com.anapaulaendler.noto.domain.interfaces.repository.CategoryRepository
 import javax.inject.Inject
 
 class CategoryRepositoryImpl @Inject constructor(
